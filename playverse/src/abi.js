@@ -1,4 +1,5 @@
-export const abi = [
+export const abi = 
+[
     {
         "inputs":[
             {
@@ -428,4 +429,4 @@ export const abi = [
         "stateMutability":"nonpayable",
         "type":"function"
     }
-    ]
+]
