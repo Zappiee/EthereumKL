@@ -2,7 +2,9 @@ const { ethers } = require("ethers");
 const fs = require("fs");
 
 async function deploy() {
-    const provider = new ethers.providers.JsonRpcProvider("YOUR_INFURA_URL");
+    const sepoliaUrl = "https://sepolia.testnetprovider.com"; // Replace with the actual Sepolia provider URL
+    const provider = new ethers.providers.JsonRpcProvider(sepoliaUrl);
+
     const wallet = new ethers.Wallet("YOUR_PRIVATE_KEY", provider);
 
     const MyTokenFactory = new ethers.ContractFactory(
