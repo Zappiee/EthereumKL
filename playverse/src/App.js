@@ -91,14 +91,21 @@ function App() {
   // to gain token just do /fund sepholia to chatbot in this link
   // https://chat.blockscan.com/index?a=0x035219a183f9e31514e0d7c23a85e3e76d7bf167
   return (
-    <div>
-        <p>Demostration of displaying token information by connecting to metamask</p>
-        <p>New Wallet Name: {name}</p>
-        <p>New Wallet Symbol: {symbol}</p>
-        <p>Remaining balance of account: {balance + symbol}</p>
-        
-
-        <button onClick={() => mintToken()}>Add tokens to account</button>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
   }
